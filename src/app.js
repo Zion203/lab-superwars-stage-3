@@ -28,7 +28,7 @@ const initPlayers = (players) => {
     // Instead of forloop use Map method
     // Code here
     detailedPlayers = players.map(function(item,index){
-        if (index<10){
+        if (index%2==0){
             type1="hero"
         }else{
             type1="villain"
