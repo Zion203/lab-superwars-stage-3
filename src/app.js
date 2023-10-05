@@ -61,11 +61,11 @@ const buildPlayers = (players, type) => {
     })
     if (type=="hero"){
         fragment=hero.map(function(item){
-            return `<div class="player"><img src="${item.image}"><div class="name">${item.name}</div><div class="strength">${item.strength}</div></div>`
+            return `<div class="player"><img src="${item.image}"alt=""><div class="name">${item.name}</div><div class="strength">${item.strength}</div></div>`
         }).join("")
     }else{
         fragment=villain.map(function(item){
-            return `<div class="player"><img src="${item.image}"><div class="name">${item.name}</div><div class="strength">${item.strength}</div></div>`
+            return `<div class="player"><img src="${item.image}"alt=""><div class="name">${item.name}</div><div class="strength">${item.strength}</div></div>`
         }).join("")
     }
     console.log(fragment)
